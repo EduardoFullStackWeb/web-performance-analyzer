@@ -1,6 +1,19 @@
 {
     "routes": [
-      { "src": "/api/(.*)", "dest": "/api/$1" },
-      { "src": "/(.*)", "dest": "/$1" }
-    ]
+      {
+        "src": "/api/(.*)",
+        "dest": "/api/$1"
+      },
+      {
+        "src": "/(.*)",
+        "dest": "/$1"
+      }
+    ],
+    "functions": {
+      "api/*.js": {
+        "memory": 3008,
+        "maxDuration": 60
+      }
+    }
   }
+  
