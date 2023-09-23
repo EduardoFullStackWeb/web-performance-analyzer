@@ -15,7 +15,8 @@ const getAnalysis = async (req, res) => {
     }
 
     const response = await axios.get('https://pagespeedonline.googleapis.com/pagespeedonline/v5/runPagespeed', {
-      params: params
+      params: params,
+      timeout: 1000
     });
     const data = response.data;
 
