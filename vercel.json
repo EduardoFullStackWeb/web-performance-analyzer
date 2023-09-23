@@ -14,11 +14,5 @@
       "path": "/api/cron",
       "schedule": "* * * * *"
     }
-  ],
-  "functions": {
-    "api/*.js": {
-      "memory": 3008,
-      "maxDuration": 60
-    }
-  }
+  ]
 }
