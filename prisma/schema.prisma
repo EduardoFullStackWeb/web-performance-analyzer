@@ -8,7 +8,7 @@ datasource db {
 }
 
 model Analysis {
-  analysisId            Int      @id
+  analysisId            Int      @id @default(autoincrement())
   createAt              DateTime
   firstContentfulPaint  Float
   speedIndex            Float
