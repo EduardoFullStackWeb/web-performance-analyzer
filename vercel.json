@@ -11,8 +11,8 @@
   ],
   "crons": [
     {
-      "path": "/api/cron",
-      "schedule": "*/35 * * * *"
+      "path": "/api/getAnalysisPageSpeed",
+      "schedule": "0 * * * *"
     }
   ]
 }
